@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in olleh-map.gemspec
 gemspec
 
-gem 'curb', '~> 0.8.8'
+gem 'rest-client'
 
 group 'development', 'test' do
   gem 'guard'

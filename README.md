@@ -4,6 +4,8 @@
 
 2) distance calculation based on routes
 
+3) need to handle lots of concurrent requests
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -40,4 +42,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## reference
 
-https://bibwild.wordpress.com/2012/04/30/ruby-http-performance-shootout-redux/
+https://github.com/rest-client/rest-client
+
+http://devnote.tistory.com/199
+
+https://github.com/JesseHerrick/minitest-with-shoulda/blob/master/test/test_calculator_basic.rb
