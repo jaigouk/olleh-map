@@ -7,6 +7,6 @@ describe OllehMap do
   end
 
   it "tells us the distance of routing between two specific locations" do
-
+    true
   end
 end
