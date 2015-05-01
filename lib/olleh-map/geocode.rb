@@ -1,6 +1,5 @@
 # encoding:utf-8
 require "olleh-map/config"
-require "addressable/uri"
 require 'rest-client'
 require 'json'
 require 'uri'
@@ -48,6 +47,10 @@ module OllehMap
       INCLUDE_JIBUN
     end
 
+    def self.coord_types
+      COORD_TYPES
+    end
+
     def self.geocode(options)
       json = JSON.generate({
         addr: URI.encode(options[:addr].strip).gsub('-', '%2D'),
@@ -73,8 +76,16 @@ module OllehMap
 
 
 
-    def convert_coord()
-
+    def self.convert_coord(options)
+      json = JSON.generate({
+        x: options[:x],
+        y: options[:y],
+        inCoordType: self.coord_types[options[:coord_in]],
+        outCoordType: self.coord_types[options[:coord_out]],
+        timestamp: self.now
+      })
+      uri = URI.encode("https://openapi.kt.com/maps/etc/ConvertCoord?params=#{json}").gsub(':','%3A').gsub(',','%2C').gsub('https%3A', 'https:')
+      self.get_payload(uri)["RESDATA"]["COORD"]
     end
 
   private

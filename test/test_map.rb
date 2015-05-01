@@ -44,6 +44,21 @@ describe OllehMap do
       end
     end
 
+    describe '#convert_coord' do
+      it "should convert points to a specific coord type" do
+        params = {
+          x: '951203',
+          y: '1950435',
+          coord_in: 'utmk',
+          coord_out: 'wgs84'
+        }
+        req = OllehMap::Geocode.convert_coord(params)
+        req["COORDTYPE"].must_equal "LLW"
+        req["Y"].must_equal "37.551966221235176"
+        req["X"].must_equal "126.9475548915227"
+      end
+    end
+
     # it "should return routes with starting and ending addresses" do
     # end
 
