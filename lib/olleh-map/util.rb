@@ -11,6 +11,8 @@ module OllehMap
     end
 
     def self.get_payload(uri)
+
+      # binding.pry
       request = RestClient.get(uri, {:Authorization => OllehMap.token, :accept => :json})
       result =  JSON.parse(request)
       res_data = JSON.parse(URI.decode(result["payload"]).gsub('+',' '))
