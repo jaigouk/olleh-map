@@ -57,6 +57,38 @@ options for coord_type
 'utmk', 'tm_west', 'tm_mid', 'tm_east', 'katec', 'utm52', 'utm51', 'wgs84', 'bessel'
 ```
 
+## TODO 
+
+* Error handling
+
+```
+# Manage a specific error code
+RestClient.get('http://my-rest-service.com/resource'){ |response, request, result, &block|
+  case response.code
+  when 200
+    p "It worked !"
+    response
+  when 423
+    raise SomeCustomExceptionIfYouWant
+  else
+    response.return!(request, result, &block)
+  end
+}
+```
+
+* cache
+```
+# https://github.com/crohr/rest-client-components
+require 'restclient/components'
+require 'rack/cache'
+RestClient.enable Rack::Cache
+RestClient.get "http://some/cacheable/resource"
+```
+
+* concurrency
+https://github.com/ruby-concurrency/concurrent-ruby
+https://hackhands.com/ruby-rails-performance-tuning/
+
 ## reference (Korean)
 
 https://www.ollehmap.com/spacedata/
