@@ -57,10 +57,6 @@ options for coord_type
 'utmk', 'tm_west', 'tm_mid', 'tm_east', 'katec', 'utm52', 'utm51', 'wgs84', 'bessel'
 ```
 
-## reference
+## reference (Korean)
 
-https://github.com/rest-client/rest-client
-
-http://devnote.tistory.com/199
-
-https://github.com/JesseHerrick/minitest-with-shoulda/blob/master/test/test_calculator_basic.rb
+https://www.ollehmap.com/spacedata/
