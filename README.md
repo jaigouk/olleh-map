@@ -22,23 +22,40 @@ Or install it yourself as:
 
     $ gem install olleh-map
 
-## Usage
+## Usage: Route Search 
 
-TODO: Write usage instructions here
+* Init
 
-## Development
+```
+OllehMap.configure("OllehMapAPI0100","bncT89dfRT")
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+* route search
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+params = {
+          start_x: "952715",
+          start_y: "1950203",
+          end_x: "954643",
+          end_y: "1951419",
+          coord_type: 'wgs84',
+          priority: 'shortest'
+        }
+req = OllehMap::Route.search(params)
+req["total_dist"].must_equal "2759"
+req["total_time"].must_equal "5.55"
 
-## Contributing
+```
 
-1. Fork it ( https://github.com/[my-github-username]/olleh-map/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+options for priority
+```
+'shortest', 'high_way', 'free_way', 'optimal' 
+```
+
+options for coord_type
+```
+'utmk', 'tm_west', 'tm_mid', 'tm_east', 'katec', 'utm52', 'utm51', 'wgs84', 'bessel'
+```
 
 ## reference
 
