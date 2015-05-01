@@ -1,8 +1,10 @@
 # encoding:utf-8
 require "olleh-map/config"
+require "olleh-map/util"
 require 'rest-client'
 require 'json'
 require 'uri'
+
 module OllehMap
   class Geocode
     # http://kin.naver.com/qna/detail.nhn?d1id=6&dirId=6&docId=111021855&qb=7ZaJ7KCV64+Z&enc=utf8&section=kin&rank=4&search_sort=0&spq=0&sp=1
@@ -55,10 +57,10 @@ module OllehMap
       json = JSON.generate({
         addr: URI.encode(options[:addr].strip).gsub('-', '%2D'),
         addrcdtype: self.addrcdtype[options[:addrcdtype]],
-        timestamp: self.now
+        timestamp: Util.now
       })
       uri = URI.encode("https://openapi.kt.com/maps/geocode/GetGeocodeByAddr?params=#{json}").gsub(':','%3A').gsub(',','%2C').gsub('https%3A', 'https:')
-      self.get_payload(uri)["RESDATA"]
+      Util.get_payload(uri)["RESDATA"]
     end
 
     def self.reverse_geocode(options)
@@ -68,10 +70,10 @@ module OllehMap
         addrcdtype: self.addrcdtype[options[:addrcdtype]],
         newAddr: self.new_addr_types[options[:new_addr_type]],
         isJibun: self.include_jibun[options[:include_jibun]],
-        timestamp: self.now
+        timestamp:  Util.now
       })
       uri = URI.encode("https://openapi.kt.com/maps/geocode/GetAddrByGeocode?params=#{json}").gsub(':','%3A').gsub(',','%2C').gsub('https%3A', 'https:')
-      self.get_payload(uri)["RESDATA"]
+      Util.get_payload(uri)["RESDATA"]
     end
 
 
@@ -82,22 +84,10 @@ module OllehMap
         y: options[:y],
         inCoordType: self.coord_types[options[:coord_in]],
         outCoordType: self.coord_types[options[:coord_out]],
-        timestamp: self.now
+        timestamp:  Util.now
       })
       uri = URI.encode("https://openapi.kt.com/maps/etc/ConvertCoord?params=#{json}").gsub(':','%3A').gsub(',','%2C').gsub('https%3A', 'https:')
-      self.get_payload(uri)["RESDATA"]["COORD"]
-    end
-
-  private
-
-    def self.now
-      Time.now.strftime("%Y%m%d%H%M%S%L")
-    end
-
-    def self.get_payload(uri)
-      request = RestClient.get(uri, {:Authorization => OllehMap.token, :accept => :json})
-      result =  JSON.parse(request)
-      res_data = JSON.parse(URI.decode(result["payload"]).gsub('+',' '))
+      Util.get_payload(uri)["RESDATA"]["COORD"]
     end
 
   end
