@@ -9,7 +9,7 @@ group 'development', 'test' do
   gem 'guard'
   gem 'guard-minitest'
   gem 'pry'
-  gem 'byebug'
-  gem 'pry-byebug'
-  gem 'better_errors'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'codeclimate-test-reporter', require: nil
 end
