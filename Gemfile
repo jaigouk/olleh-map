@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rest-client'
-gem 'addressable'
+
 group 'development', 'test' do
   gem 'guard'
   gem 'guard-minitest'
