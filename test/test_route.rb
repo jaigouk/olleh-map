@@ -26,7 +26,7 @@ describe OllehMap do
           }
           req = OllehMap::Route.search(params)
           req["total_dist"].must_equal "2759"
-          req["total_time"].must_equal "6.27"
+          req["total_time"].must_equal "6.24"
         end
       end
     end

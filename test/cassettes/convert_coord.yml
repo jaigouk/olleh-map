@@ -123,4 +123,168 @@ http_interactions:
       string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"472c4ebb-8175-32f0-b4d3-75bb7d2fbf4b","payload":"%7B%22RESDATA%22%3A%7B%22COORD%22%3A%7B%22COORDTYPE%22%3A%22LLW%22%2C%22Y%22%3A%2237.551966221235176%22%2C%22X%22%3A%22126.9475548915227%22%7D%7D%2C%22ID%22%3A%22601%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22472c4ebb-8175-32f0-b4d3-75bb7d2fbf4b%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
     http_version: 
   recorded_at: Fri, 01 May 2015 23:54:51 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/etc/ConvertCoord?params=%7B%22x%22:%22951203%22,%22y%22:%221950435%22,%22inCoordType%22:0,%22outCoordType%22:7,%22timestamp%22:%2220150502085536955%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:55:36 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '452'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=zKTQw9m45d[p4seUNZJ6; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"11820e11-8130-3fb4-a947-73a30c23a778","payload":"%7B%22RESDATA%22%3A%7B%22COORD%22%3A%7B%22COORDTYPE%22%3A%22LLW%22%2C%22Y%22%3A%2237.551966221235176%22%2C%22X%22%3A%22126.9475548915227%22%7D%7D%2C%22ID%22%3A%22601%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%2211820e11-8130-3fb4-a947-73a30c23a778%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:55:37 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/etc/ConvertCoord?params=%7B%22x%22:%22951203%22,%22y%22:%221950435%22,%22inCoordType%22:0,%22outCoordType%22:7,%22timestamp%22:%2220150502085552186%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:55:52 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '452'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=JMu44OisN14FxI1dFqPt; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"ced3c291-136d-3a07-8f21-28c82eea3ea5","payload":"%7B%22RESDATA%22%3A%7B%22COORD%22%3A%7B%22COORDTYPE%22%3A%22LLW%22%2C%22Y%22%3A%2237.551966221235176%22%2C%22X%22%3A%22126.9475548915227%22%7D%7D%2C%22ID%22%3A%22601%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22ced3c291-136d-3a07-8f21-28c82eea3ea5%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:55:52 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/etc/ConvertCoord?params=%7B%22x%22:%22951203%22,%22y%22:%221950435%22,%22inCoordType%22:0,%22outCoordType%22:7,%22timestamp%22:%2220150502085656005%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:56:55 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '452'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=ohxf2xF6pL1jYD3IbIoq; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"b8bb4241-0adc-36e2-90a7-d391a5c49ed4","payload":"%7B%22RESDATA%22%3A%7B%22COORD%22%3A%7B%22COORDTYPE%22%3A%22LLW%22%2C%22Y%22%3A%2237.551966221235176%22%2C%22X%22%3A%22126.9475548915227%22%7D%7D%2C%22ID%22%3A%22601%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22b8bb4241-0adc-36e2-90a7-d391a5c49ed4%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:56:56 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/etc/ConvertCoord?params=%7B%22x%22:%22951203%22,%22y%22:%221950435%22,%22inCoordType%22:0,%22outCoordType%22:7,%22timestamp%22:%2220150502085729873%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:57:29 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '452'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=ilx4GRbnfc6eUg6ZRJQI; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"4fb34d2b-248a-3286-9719-f2fd9c02b1ee","payload":"%7B%22RESDATA%22%3A%7B%22COORD%22%3A%7B%22COORDTYPE%22%3A%22LLW%22%2C%22Y%22%3A%2237.551966221235176%22%2C%22X%22%3A%22126.9475548915227%22%7D%7D%2C%22ID%22%3A%22601%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%224fb34d2b-248a-3286-9719-f2fd9c02b1ee%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:57:30 GMT
 recorded_with: VCR 2.9.3

@@ -164,4 +164,168 @@ http_interactions:
       string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"dc45fd36-e31f-34b7-8f19-7de1948d42ae","payload":"%7B%22RESDATA%22%3A%7B%22COUNT%22%3A1%2C%22ADDRS%22%3A%5B%7B%22DONG_CODE%22%3A%224817046028%22%2C%22ADDRESS%22%3A%22%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%A7%84%EC%A3%BC%EC%8B%9C+%EC%88%98%EA%B3%A1%EB%A9%B4+%EC%9B%90%EA%B3%84%EB%A6%AC+763-2%22%2C%22Y%22%3A1692962%2C%22X%22%3A1218056%7D%5D%7D%2C%22ID%22%3A%22502%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22dc45fd36-e31f-34b7-8f19-7de1948d42ae%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
     http_version: 
   recorded_at: Fri, 01 May 2015 23:54:51 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/geocode/GetAddrByGeocode?params=%7B%22x%22:%221815743%22,%22y%22:%22993479%22,%22addrcdtype%22:0,%22newAddr%22:0,%22isJibun%22:1,%22timestamp%22:%2220150502085536476%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:55:36 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '601'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=rmRB6hzvQtG[IoCR7ZuL; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"48345043-b4b4-3614-a4fe-76ec7fec4fbe","payload":"%7B%22RESDATA%22%3A%7B%22COUNT%22%3A1%2C%22ADDRS%22%3A%5B%7B%22DONG_CODE%22%3A%224817046028%22%2C%22ADDRESS%22%3A%22%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%A7%84%EC%A3%BC%EC%8B%9C+%EC%88%98%EA%B3%A1%EB%A9%B4+%EC%9B%90%EA%B3%84%EB%A6%AC+763-2%22%2C%22Y%22%3A1692962%2C%22X%22%3A1218056%7D%5D%7D%2C%22ID%22%3A%22502%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%2248345043-b4b4-3614-a4fe-76ec7fec4fbe%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:55:36 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/geocode/GetAddrByGeocode?params=%7B%22x%22:%221815743%22,%22y%22:%22993479%22,%22addrcdtype%22:0,%22newAddr%22:0,%22isJibun%22:1,%22timestamp%22:%2220150502085552927%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:55:52 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '601'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=ujaJQGGbwp1glbl9jI4h; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"dda4b6a7-3ab2-3762-9661-26f0611ef8f6","payload":"%7B%22RESDATA%22%3A%7B%22COUNT%22%3A1%2C%22ADDRS%22%3A%5B%7B%22DONG_CODE%22%3A%224817046028%22%2C%22ADDRESS%22%3A%22%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%A7%84%EC%A3%BC%EC%8B%9C+%EC%88%98%EA%B3%A1%EB%A9%B4+%EC%9B%90%EA%B3%84%EB%A6%AC+763-2%22%2C%22Y%22%3A1692962%2C%22X%22%3A1218056%7D%5D%7D%2C%22ID%22%3A%22502%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22dda4b6a7-3ab2-3762-9661-26f0611ef8f6%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:55:53 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/geocode/GetAddrByGeocode?params=%7B%22x%22:%221815743%22,%22y%22:%22993479%22,%22addrcdtype%22:0,%22newAddr%22:0,%22isJibun%22:1,%22timestamp%22:%2220150502085656179%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:56:56 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '601'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=7UX8vxTVAxVQDC]3txWn; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"cd60ac0f-7af9-3df9-8402-eb52d9ec6779","payload":"%7B%22RESDATA%22%3A%7B%22COUNT%22%3A1%2C%22ADDRS%22%3A%5B%7B%22DONG_CODE%22%3A%224817046028%22%2C%22ADDRESS%22%3A%22%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%A7%84%EC%A3%BC%EC%8B%9C+%EC%88%98%EA%B3%A1%EB%A9%B4+%EC%9B%90%EA%B3%84%EB%A6%AC+763-2%22%2C%22Y%22%3A1692962%2C%22X%22%3A1218056%7D%5D%7D%2C%22ID%22%3A%22502%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22cd60ac0f-7af9-3df9-8402-eb52d9ec6779%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:56:56 GMT
+- request:
+    method: get
+    uri: https://OllehMapAPI0100:bncT89dfRT@openapi.kt.com/maps/geocode/GetAddrByGeocode?params=%7B%22x%22:%221815743%22,%22y%22:%22993479%22,%22addrcdtype%22:0,%22newAddr%22:0,%22isJibun%22:1,%22timestamp%22:%2220150502085729628%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2015 23:57:29 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '601'
+      Set-Cookie:
+      - _WL_AUTHCOOKIE_JSESSIONID=cxbBU8hP0LBEi1v8enRC; path=/; secure; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Usedhandler:
+      - IPBasedSLAHandlerREST
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"sequenceno":"9999","errordescription":null,"returncode":"1","transactionid":"d555c21f-3979-3a37-a480-ba09bfddd8e1","payload":"%7B%22RESDATA%22%3A%7B%22COUNT%22%3A1%2C%22ADDRS%22%3A%5B%7B%22DONG_CODE%22%3A%224817046028%22%2C%22ADDRESS%22%3A%22%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%A7%84%EC%A3%BC%EC%8B%9C+%EC%88%98%EA%B3%A1%EB%A9%B4+%EC%9B%90%EA%B3%84%EB%A6%AC+763-2%22%2C%22Y%22%3A1692962%2C%22X%22%3A1218056%7D%5D%7D%2C%22ID%22%3A%22502%22%2C%22ERRCD%22%3A0%2C%22NO%22%3A%22d555c21f-3979-3a37-a480-ba09bfddd8e1%22%2C%22ERRMS%22%3A%22SUCCESS%22%7D","errorcode":null,"returndescription":"SUCCESS"}'
+    http_version: 
+  recorded_at: Fri, 01 May 2015 23:57:29 GMT
 recorded_with: VCR 2.9.3
