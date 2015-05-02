@@ -13,8 +13,8 @@ describe OllehMap do
     end
 
     describe '#search' do
-      it "should return distance in routes" do
-        VCR.insert_cassette('search', :record => :once) do
+      it "should return distance for a route" do
+        VCR.insert_cassette('search_total_distance', :record => :once) do
           params = {
             start_x: "952715",
             start_y: "1950203",
@@ -25,13 +25,26 @@ describe OllehMap do
           }
           req = OllehMap::Route.search(params)
           req["total_dist"].must_equal "2759"
+        end
+      end
+
+      it "should return time for a route" do
+        VCR.insert_cassette('search_total_time', :record => :once) do
+          params = {
+            start_x: "952715",
+            start_y: "1950203",
+            end_x: "954643",
+            end_y: "1951419",
+            coord_type: 'wgs84',
+            priority: 'shortest'
+          }
+          req = OllehMap::Route.search(params)
           req["total_time"].must_equal "7.09"
         end
       end
     end
-    # it "should return routes with starting and ending addresses" do
-    # end
 
+    # it "should return routes with starting and ending addresses" do
     # it "should return routes with starting and ending addresses" do
     # end
 
