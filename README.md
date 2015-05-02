@@ -93,21 +93,8 @@ RestClient.get "http://some/cacheable/resource"
 https://github.com/ruby-concurrency/concurrent-ruby
 https://hackhands.com/ruby-rails-performance-tuning/
 
-## To install and use jruby
-
-jdk installed on yosemite via http://www.youtube.com/watch?v=K4ihphiTwK4
-
-```
-PATH=$PATH:/Users/jaigouk/.rvm/gems/ruby-2.2.2/bin
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
-export JRUBY_HOME=$HOME/.rvm/rubies/jruby-9.0.0.0.pre1/
-export JRUBY_OPTS="-Xcli.debug=true --debug"
-```
-
 ## reference
 
 [Olleh Map API (Korean)](https://www.ollehmap.com/spacedata/)
-
-[Installing jruby 9000 on OS X](http://rayhightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/)
 
 [Testing Against Multiple Rails Versions](http://www.schneems.com/post/50991826838/testing-against-multiple-rails-versions/)
