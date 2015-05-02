@@ -8,6 +8,5 @@ require 'minitest/autorun'
 require 'minitest/spec'
 require 'minitest/pride'
 require 'pry'
-require 'vcr'
 # pull in the VCR setup
 require File.expand_path './vcr_setup.rb', __dir__
