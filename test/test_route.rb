@@ -14,7 +14,7 @@ describe OllehMap do
 
     describe '#search' do
       it "should return distance in routes" do
-        VCR.insert_cassette('search') do
+        VCR.insert_cassette('search', :record => :once) do
           params = {
             start_x: "952715",
             start_y: "1950203",
