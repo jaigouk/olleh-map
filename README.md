@@ -89,6 +89,10 @@ RestClient.get "http://some/cacheable/resource"
 https://github.com/ruby-concurrency/concurrent-ruby
 https://hackhands.com/ruby-rails-performance-tuning/
 
-## reference (Korean)
+## reference
 
-https://www.ollehmap.com/spacedata/
+[Olleh Map API (Korean)](https://www.ollehmap.com/spacedata/)
+
+[Installing jruby 9000 on OS X](http://rayhightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/)
+
+[Testing Against Multiple Rails Versions](http://www.schneems.com/post/50991826838/testing-against-multiple-rails-versions/)
