@@ -4,7 +4,6 @@ describe OllehMap do
   describe OllehMap::Geocode do
 
     before do
-      VCR.insert_cassette name
       OllehMap.configure("OllehMapAPI0100","bncT89dfRT")
     end
 
@@ -14,7 +13,7 @@ describe OllehMap do
 
     describe '#geocode' do
       it "should geocode (addr -> coord)" do
-        VCR.use_cassette('geocode', :record => :new_episodes) do
+        VCR.insert_cassette('geocode') do
           params = {
           addr: "서울특별시 강남구 삼성동 168-1",
           addrcdtype: 'law'
@@ -25,10 +24,9 @@ describe OllehMap do
         end
       end
     end
-
     describe '#reverse_geocode' do
       it "should reverse geocode(coord -> addr)" do
-        VCR.use_cassette('reverse_geocode', :record => :new_episodes) do
+        VCR.insert_cassette('reverse_geocode') do
           params = {
             x: "1815743",
             y: "993479",
@@ -44,7 +42,7 @@ describe OllehMap do
 
     describe '#convert_coord' do
       it "should convert points to a specific coord type" do
-        VCR.use_cassette('convert_coord', :record => :new_episodes) do
+        VCR.insert_cassette('convert_coord') do
           params = {
             x: '951203',
             y: '1950435',
