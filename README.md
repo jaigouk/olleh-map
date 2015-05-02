@@ -1,5 +1,9 @@
 # OllehMap
 
+[![Build Status](https://travis-ci.org/jaigouk/olleh-map.svg)](https://travis-ci.org/jaigouk/olleh-map)
+[![Code Climate](https://codeclimate.com/github/jaigouk/olleh-map/badges/gpa.svg)](https://codeclimate.com/github/jaigouk/olleh-map)
+[![Test Coverage](https://codeclimate.com/github/jaigouk/olleh-map/badges/coverage.svg)](https://codeclimate.com/github/jaigouk/olleh-map)
+
 1) tell us the distance of routing between two specific locations
 
 2) distance calculation based on routes

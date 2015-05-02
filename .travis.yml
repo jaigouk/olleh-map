@@ -1,7 +1,12 @@
+sudo: false
 language: ruby
+cache: bundler
 rvm:
   - 2.2.2
   - jruby-9.0.0.0.pre2
 env:
   - "JRUBY"
   - "RUBY"
+branches:
+  only:
+    - master
