@@ -1,7 +1,6 @@
 # encoding:utf-8
 require "olleh-map/config"
 require "olleh-map/util"
-require 'rest-client'
 require 'json'
 require 'uri'
 
